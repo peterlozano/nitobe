@@ -1,0 +1,174 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Nitobe Dutch translation\n"
+"POT-Creation-Date: 2009-01-14 17:43+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Jack <j.garmisch@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: dutch\n"
+"X-Poedit-Country: belgium\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: node.tpl.php:17
+msgid "Posted by !author"
+msgstr "Door !author"
+
+#: template.php:97
+msgid "not verified"
+msgstr "niet geverifieerd"
+
+#: template.php:126
+msgid "Anonymous"
+msgstr "Anoniem"
+
+#: template.php:127
+msgid "@user's picture"
+msgstr "@user's afbeelding"
+
+#: template.php:133
+msgid "View user profile."
+msgstr "Bekijk gebruikersprofiel."
+
+#: template.php:198
+msgid "Tags:"
+msgstr "Tags:"
+
+#: template.php:332
+msgid "Read new comments or comment on @title"
+msgstr "Lees nieuwe reactie(s) op @title"
+
+#: template.php:336
+msgid "Read new comments for @title"
+msgstr "Lees nieuwe reacties op @title"
+
+#: template.php:346
+msgid "Read comments or comment on @title"
+msgstr "Lees reactie(s) op @title"
+
+#: template.php:350
+msgid "Read comments for @title"
+msgstr "Lees reacties op @title"
+
+#: template.php:360;372
+msgid "Add a Comment"
+msgstr "Reactie toevoegen"
+
+#: template.php:361;375
+msgid "Comment on @title"
+msgstr "Reactie op @title"
+
+#: template.php:393
+msgid "Continue reading..."
+msgstr "Lees verder..."
+
+#: template.php:394
+msgid "Continue reading !title."
+msgstr "!title verder lezen."
+
+#: template.php:437
+msgid "Comments"
+msgstr "Reacties"
+
+#: template.php:490
+msgid "@date at @time"
+msgstr "@date om @time"
+
+#: template.php:520;528
+msgid "!datetime — !username"
+msgstr "!datetime — !username"
+
+#: template.php:328
+msgid "1 New Comment"
+msgid_plural "@count New Comments"
+msgstr[0] "1 nieuwe reactie"
+msgstr[1] "@count nieuwe reacties"
+
+#: template.php:342
+msgid "1 Comment"
+msgid_plural "@count Comments"
+msgstr[0] "1 reactie"
+msgstr[1] "@count reacties"
+
+#: theme-settings.php:35
+msgid "Header image"
+msgstr "Afbeelding in kop"
+
+#: theme-settings.php:45
+msgid "Force Header Image"
+msgstr "Forceer afbeelding in kop"
+
+#: theme-settings.php:47
+msgid "By default, if there is block content in the masthead region, the header image will not be displayed. Check this box to cause the header image to be displayed as the region's background image."
+msgstr "Als er blokinhoud is in de masttop regio zal standaard de afbeelding in de kop niet worden getoond. Vink dit aan om de afbeelidng als het achtergrondbeeld voor deze regio te tonen."
+
+#: theme-settings.php:55
+msgid "Show single item breadcrumb trail"
+msgstr "Toon enkel item in breadcrumb trail"
+
+#: theme-settings.php:57
+msgid "By default the breadcrumb trail will be hidden if it contains just the link to the top level page. Check this box to override that behavior."
+msgstr "Standaard zal de breadcrumb trail worden verborgen als het alleen de pagina op hoogste niveau.  Vink deze box aan indien u dit wilt onderdrukken."
+
+#: theme-settings.php:65
+msgid "Strip '(not verified)' from usernames"
+msgstr "Verwijder '(niet geverifieerd)' van gebruikersnamen"
+
+#: theme-settings.php:67
+msgid "Normally, when an anonymous visitors posts a comment, their name is suffixed with '%verified'. Checking this will prevent that text from being added."
+msgstr "Als een anonieme bezoeker een reactie verstuurt zal standaard achter de naam  '%verified' worden toegevoegd. Vink dit aan om te  voorkomen dat de tekst wordt toegevoegd."
+
+#: theme-settings.php:76
+msgid "Suppress 'Reply' link in comments"
+msgstr "Onderdruk 'Antwoord' link in reacties"
+
+#: theme-settings.php:78
+msgid "Suppresses the reply link to prevent vistors from replying to individual comments."
+msgstr "Onderdrukt de Atwoord-link, om te vermijden dat bezoekers reageren op individuele reacties."
+
+#: theme-settings.php:95
+msgid "Show date stamp"
+msgstr "Toon datum"
+
+#: theme-settings.php:98
+msgid "Content types selected here will display a date stamp in their headline."
+msgstr "Inhoudstypes die hier zijn geselecteerd, worden getoond met een datum in de kopregel."
+
+#: nitobe.info:0
+msgid "Nitobe"
+msgstr "Nitobe"
+
+#: nitobe.info:0
+msgid "Fixed width (960 pixels) theme with a right side bar region an"
+msgstr "Thema met vaste breedte (960 pixels) en met een rechtse zijbalk regio"
+
+#: nitobe.info:0
+msgid "Header"
+msgstr "Kop"
+
+#: nitobe.info:0
+msgid "Masthead"
+msgstr "Masttop"
+
+#: nitobe.info:0
+msgid "Content"
+msgstr "Inhoud"
+
+#: nitobe.info:0
+msgid "Upper Sidebar"
+msgstr "Bovenste zijbalk"
+
+#: nitobe.info:0
+msgid "Lower Sidebar"
+msgstr "Laagste zijbalk"
+
+#: nitobe.info:0
+msgid "Bottom Block Bar"
+msgstr "Onderste blokbalk"
+
+#: nitobe.info:0
+msgid "Footer"
+msgstr "Voetregel"
+

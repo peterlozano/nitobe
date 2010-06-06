@@ -1,0 +1,184 @@
+# $Id: sv.po,v 1.1 2009/02/26 14:33:30 shannonlucas Exp $
+#
+# Swedish translation of Nitobe (general)
+# Copyright 2009 Robert Johnsson <chreadie@gmail.com>
+# Generated from files:
+#  node.tpl.php,v 1.8 2008/12/31 22:23:01 shannonlucas
+#  template.php,v 1.18 2008/12/31 22:23:01 shannonlucas
+#  theme-settings.php,v 1.9 2008/11/23 22:16:19 shannonlucas
+#  nitobe.info,v 1.8 2008/12/18 21:04:07 shannonlucas
+#
+
+msgid ""
+msgstr ""
+"Project-Id-Version: Nitobe Swedish translation\n"
+"POT-Creation-Date: 2009-01-14 17:43+0100\n"
+"PO-Revision-Date: 2009-02-26 07:51+0100\n"
+"Last-Translator: Hedkandi <chreadie@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: swedish\n"
+"X-Poedit-Country: sweden\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: node.tpl.php:17
+msgid "Posted by !author"
+msgstr "Skrivet av !author"
+
+#: template.php:97
+msgid "not verified"
+msgstr "inte verifierad"
+
+#: template.php:126
+msgid "Anonymous"
+msgstr "Anonym"
+
+#: template.php:127
+msgid "@user's picture"
+msgstr "@user's bilder"
+
+#: template.php:133
+msgid "View user profile."
+msgstr "Visa användarprofil."
+
+#: template.php:198
+msgid "Tags:"
+msgstr "Taggar:"
+
+#: template.php:332
+msgid "Read new comments or comment on @title"
+msgstr "Läs nya kommentarer för @title"
+
+#: template.php:336
+msgid "Read new comments for @title"
+msgstr "Läs nya kommentarer för @title"
+
+#: template.php:346
+msgid "Read comments or comment on @title"
+msgstr "Läs nya kommentarer för @title"
+
+#: template.php:350
+msgid "Read comments for @title"
+msgstr "Läs nya kommentarer för @title"
+
+#: template.php:360;372
+msgid "Add a Comment"
+msgstr "Skriv kommentar"
+
+#: template.php:361;375
+msgid "Comment on @title"
+msgstr "Kommentera @title"
+
+#: template.php:393
+msgid "Continue reading..."
+msgstr "Läs mer..."
+
+#: template.php:394
+msgid "Continue reading !title."
+msgstr "Forsätt läsa !title"
+
+#: template.php:437
+msgid "Comments"
+msgstr "Kommentarer"
+
+#: template.php:490
+msgid "@date at @time"
+msgstr "@date @time"
+
+#: template.php:520;528
+msgid "!datetime — !username"
+msgstr "!datetime — !username"
+
+#: template.php:328
+msgid "1 New Comment"
+msgid_plural "@count New Comments"
+msgstr[0] "1 ny kommentar"
+msgstr[1] "@count nya kommentarer"
+
+#: template.php:342
+msgid "1 Comment"
+msgid_plural "@count Comments"
+msgstr[0] "1 kommentar"
+msgstr[1] "@count kommentarer"
+
+#: theme-settings.php:35
+msgid "Header image"
+msgstr "Huvudbild"
+
+#: theme-settings.php:45
+msgid "Force Header Image"
+msgstr "Tvinga huvudbild"
+
+#: theme-settings.php:47
+msgid "By default, if there is block content in the masthead region, the header image will not be displayed. Check this box to cause the header image to be displayed as the region's background image."
+msgstr "Om det finns innehåll i masthead området så visas inte huvudbilden. Aktivera det här alternativet för att visa bilden som regionens bakgrundsbild."
+
+#: theme-settings.php:55
+msgid "Show single item breadcrumb trail"
+msgstr "Visa enstaka sakers brödtextspår"
+
+#: theme-settings.php:57
+msgid "By default the breadcrumb trail will be hidden if it contains just the link to the top level page. Check this box to override that behavior."
+msgstr "Brödtextspår visas inte om det endast innehåller en länk till första sidan. Aktivera det här alternativet för att ignorera det beteendet."
+
+#: theme-settings.php:65
+msgid "Strip '(not verified)' from usernames"
+msgstr "Ta bort '(inte verifierad)' från användarnamn"
+
+#: theme-settings.php:67
+msgid "Normally, when an anonymous visitors posts a comment, their name is suffixed with '%verified'. Checking this will prevent that text from being added."
+msgstr "När anonyma användare kommenterar så läggs '%verified' till vid namnet. Aktivera det här alternativet för att förhindra detta."
+
+#: theme-settings.php:76
+msgid "Suppress 'Reply' link in comments"
+msgstr "Ta bort 'Svara' länken i kommentarer"
+
+#: theme-settings.php:78
+msgid "Suppresses the reply link to prevent vistors from replying to individual comments."
+msgstr "Ta bort svaralänken för att förhindra besökare från att svara på individuella kommentarer."
+
+#: theme-settings.php:95
+msgid "Show date stamp"
+msgstr "Visa datumstämpel"
+
+#: theme-settings.php:98
+msgid "Content types selected here will display a date stamp in their headline."
+msgstr "Valda innehållstyper kommer visa en datumstämpel i sin sidtitel."
+
+#: nitobe.info:0
+msgid "Nitobe"
+msgstr "Nitobe"
+
+#: nitobe.info:0
+msgid "Fixed width (960 pixels) theme with a right side bar region an"
+msgstr "Tema med fast bredd (960 pixlar) med en kolumn till höger"
+
+#: nitobe.info:0
+msgid "Header"
+msgstr "Huvud"
+
+#: nitobe.info:0
+msgid "Masthead"
+msgstr "Masthead"
+
+#: nitobe.info:0
+msgid "Content"
+msgstr "Innehåll"
+
+#: nitobe.info:0
+msgid "Upper Sidebar"
+msgstr "Övre kolumn"
+
+#: nitobe.info:0
+msgid "Lower Sidebar"
+msgstr "Undre kolumn"
+
+#: nitobe.info:0
+msgid "Bottom Block Bar"
+msgstr "Bottenblock kolumn"
+
+#: nitobe.info:0
+msgid "Footer"
+msgstr "Sidfot"

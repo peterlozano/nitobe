@@ -1,0 +1,170 @@
+# $Id: nitobe.pot,v 1.2.8.1 2009/08/01 17:58:31 shannonlucas Exp $
+#
+# LANGUAGE translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  template.php,v 1.21.2.1 2009/06/19 02:36:38 shannonlucas
+#  theme-settings.php,v 1.9.8.1 2009/06/19 02:36:38 shannonlucas
+#  nitobe.info,v 1.9.2.1 2009/06/19 02:36:38 shannonlucas
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2009-08-01 11:52-0500\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: template.php:113
+msgid "not verified"
+msgstr ""
+
+#: template.php:130
+msgid "Anonymous"
+msgstr ""
+
+#: template.php:131
+msgid "@user's picture"
+msgstr ""
+
+#: template.php:140
+msgid "View user profile."
+msgstr ""
+
+#: template.php:210
+msgid "Tags: "
+msgstr ""
+
+#: template.php:211
+msgid ", "
+msgstr ""
+
+#: template.php:229
+msgid " | "
+msgstr ""
+
+#: template.php:313
+msgid "Permanent Link to !title"
+msgstr ""
+
+#: template.php:319
+msgid "Posted by !author"
+msgstr ""
+
+#: template.php:326;451
+msgid "d M Y"
+msgstr ""
+
+#: template.php:479
+msgid "Permanent link to this comment."
+msgstr ""
+
+#: template.php:488
+msgid "M jS, Y"
+msgstr ""
+
+#: template.php:489
+msgid "g:i a"
+msgstr ""
+
+#: template.php:493
+msgid "Posted by !author on @date at @time."
+msgstr ""
+
+#: theme-settings.php:26
+msgid "Where should the sidebars be placed?"
+msgstr ""
+
+#: theme-settings.php:35
+msgid "Sidebar placement"
+msgstr ""
+
+#: theme-settings.php:57
+msgid "Header image"
+msgstr ""
+
+#: theme-settings.php:66
+msgid "By default, if there is block content in the masthead region, the header image will not be displayed. Check this box to cause the header image to be displayed as the region's background image."
+msgstr ""
+
+#: theme-settings.php:69
+msgid "Force header image"
+msgstr ""
+
+#: theme-settings.php:78
+msgid "Should the title be adjusted to apply an alternate color to every other word and remove inter-word spacing?"
+msgstr ""
+
+#: theme-settings.php:81
+msgid "Apply title effect"
+msgstr ""
+
+#: theme-settings.php:90
+msgid "Normally, when an anonymous visitors posts a comment, their name is suffixed with '%verified'. Checking this will prevent that text from being added."
+msgstr ""
+
+#: theme-settings.php:94
+msgid "Strip '(not verified)' from usernames"
+msgstr ""
+
+#: theme-settings.php:104
+msgid "The number of default pages to include in pager controls. If you are using a three column layout, a lower number here will work better."
+msgstr ""
+
+#: theme-settings.php:108
+msgid "Pager item count"
+msgstr ""
+
+#: nitobe.info:0
+msgid "Nitobe"
+msgstr ""
+
+#: nitobe.info:0
+msgid "Fixed width theme"
+msgstr ""
+
+#: nitobe.info:0
+msgid "Header"
+msgstr ""
+
+#: nitobe.info:0
+msgid "Masthead"
+msgstr ""
+
+#: nitobe.info:0
+msgid "Content"
+msgstr ""
+
+#: nitobe.info:0
+msgid "Left Sidebar"
+msgstr ""
+
+#: nitobe.info:0
+msgid "Right Sidebar"
+msgstr ""
+
+#: nitobe.info:0
+msgid "Bottom Left"
+msgstr ""
+
+#: nitobe.info:0
+msgid "Bottom Center Left"
+msgstr ""
+
+#: nitobe.info:0
+msgid "Bottom Center Right"
+msgstr ""
+
+#: nitobe.info:0
+msgid "Bottom Right"
+msgstr ""
+
+#: nitobe.info:0
+msgid "Footer"
+msgstr ""
+

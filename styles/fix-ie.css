@@ -1,0 +1,9 @@
+@CHARSET "UTF-8";
+/**
+ * @file fix-ie.css
+ * Fixes for Internet Explorer.
+ *
+ * $Id: fix-ie.css,v 1.1.2.2 2009/08/01 17:58:31 shannonlucas Exp $
+ */
+
+hr.break { display: none; }

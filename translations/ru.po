@@ -1,0 +1,188 @@
+# translation of ru.po to
+# $Id: ru.po,v 1.1.4.2 2009/06/19 02:59:43 shannonlucas Exp $
+#
+# Nitobe translation template
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  node.tpl.php,v 1.8 2008/12/31 22:23:01 shannonlucas
+#  template.php,v 1.18 2008/12/31 22:23:01 shannonlucas
+#  theme-settings.php,v 1.9 2008/11/23 22:16:19 shannonlucas
+#  nitobe.info,v 1.8 2008/12/18 21:04:07 shannonlucas
+#
+# Vlad Savitsky <drupal@vladsavitsky.ru>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: ru\n"
+"POT-Creation-Date: 2009-01-14 17:43+0100\n"
+"PO-Revision-Date: 2009-04-12 23:52+0300\n"
+"Last-Translator: Vlad Savitsky <drupal@vladsavitsky.ru>\n"
+"Language-Team:  <ru@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
+"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: node.tpl.php:17
+msgid "Posted by !author"
+msgstr "Опубликовано !author"
+
+#: template.php:97
+msgid "not verified"
+msgstr "не проверялось"
+
+#: template.php:126
+msgid "Anonymous"
+msgstr "Гость"
+
+#: template.php:127
+msgid "@user's picture"
+msgstr "аватар @user"
+
+#: template.php:133
+msgid "View user profile."
+msgstr "Смотреть профиль пользователя."
+
+#: template.php:198
+msgid "Tags:"
+msgstr "Теги:"
+
+#: template.php:332
+msgid "Read new comments or comment on @title"
+msgstr "Читать новые комментарии к @title"
+
+#: template.php:336
+msgid "Read new comments for @title"
+msgstr "Читать новые комментарии к @title"
+
+#: template.php:346
+msgid "Read comments or comment on @title"
+msgstr "Читать комментарии к @title"
+
+#: template.php:350
+msgid "Read comments for @title"
+msgstr "Читать комментарии к @title"
+
+#: template.php:360;372
+msgid "Add a Comment"
+msgstr "Добавить комментарий"
+
+#: template.php:361;375
+msgid "Comment on @title"
+msgstr "Комментарий к @title"
+
+#: template.php:393
+msgid "Continue reading..."
+msgstr "Читать дальше..."
+
+#: template.php:394
+msgid "Continue reading !title."
+msgstr "Читать дальше !title."
+
+#: template.php:437
+msgid "Comments"
+msgstr "Комментарии"
+
+#: template.php:490
+msgid "@date at @time"
+msgstr "@date в @time"
+
+#: template.php:520;528
+msgid "!datetime — !username"
+msgstr "!datetime — !username"
+
+#: template.php:328
+msgid "1 New Comment"
+msgid_plural "@count New Comments"
+msgstr[0] "1 новый комментарий"
+msgstr[1] "@count новых комментария"
+msgstr[2] "@count новых комментариев"
+
+#: template.php:342
+msgid "1 Comment"
+msgid_plural "@count Comments"
+msgstr[0] "1 комментарий"
+msgstr[1] "@count комментария"
+msgstr[2] "@count комментариев"
+
+#: theme-settings.php:35
+msgid "Header image"
+msgstr "Изображение в шапке"
+
+#: theme-settings.php:45
+msgid "Force Header Image"
+msgstr "Форсировать изображение в шапке"
+
+#: theme-settings.php:47
+msgid "By default, if there is block content in the masthead region, the header image will not be displayed. Check this box to cause the header image to be displayed as the region's background image."
+msgstr "По умолчанию, если если в регионе над шапкой есть блок с контентом, изображение в шапке не будет показано. Поставьте галочку, чтобы сделать изображение в шапке фоном региона."
+
+#: theme-settings.php:55
+msgid "Show single item breadcrumb trail"
+msgstr "Показывать одиночный пункт в цепочке хлебных крошек"
+
+#: theme-settings.php:57
+msgid "By default the breadcrumb trail will be hidden if it contains just the link to the top level page. Check this box to override that behavior."
+msgstr "По умолчанию цепочка хлебных крошек будет скрыта, если она содержит только ссылку на страницу самого верхнего уровня. Поставьте галочку, чтобы изменить это поведение."
+
+#: theme-settings.php:65
+msgid "Strip '(not verified)' from usernames"
+msgstr "Убрать '(не проверялось)'из имени пользователя"
+
+#: theme-settings.php:67
+msgid "Normally, when an anonymous visitors posts a comment, their name is suffixed with '%verified'. Checking this will prevent that text from being added."
+msgstr "Обычно, когда посетитель анонимно публикует комментарий, то к его имени добавляется '%verified'. Поставьте галочку, чтобы этот текст не добавлялся."
+
+#: theme-settings.php:76
+msgid "Suppress 'Reply' link in comments"
+msgstr "Подавлять ссылку 'Ответить' в комментариях"
+
+#: theme-settings.php:78
+msgid "Suppresses the reply link to prevent vistors from replying to individual comments."
+msgstr "Подавление ссылки \"Ответить\" не дает посетителям отвечать на конкретный комментарий."
+
+#: theme-settings.php:95
+msgid "Show date stamp"
+msgstr "Показывать дату"
+
+#: theme-settings.php:98
+msgid "Content types selected here will display a date stamp in their headline."
+msgstr "Типы материалов, которые указаны ниже будут показывать дату в своём заголовке."
+
+#: nitobe.info:0
+msgid "Nitobe"
+msgstr "Nitobe"
+
+#: nitobe.info:0
+msgid "Fixed width (960 pixels) theme with a right side bar region an"
+msgstr "Тема с фиксированной шириной (960 px) и с блоками с правой стороны"
+
+#: nitobe.info:0
+msgid "Header"
+msgstr "Заголовок"
+
+#: nitobe.info:0
+msgid "Masthead"
+msgstr "Верх шапки"
+
+#: nitobe.info:0
+msgid "Content"
+msgstr "Контент"
+
+#: nitobe.info:0
+msgid "Upper Sidebar"
+msgstr "Верхний боковой регион"
+
+#: nitobe.info:0
+msgid "Lower Sidebar"
+msgstr "Нижний боковой регион"
+
+#: nitobe.info:0
+msgid "Bottom Block Bar"
+msgstr "Нижний регион блоков"
+
+#: nitobe.info:0
+msgid "Footer"
+msgstr "Подвал"
+
