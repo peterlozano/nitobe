@@ -71,7 +71,7 @@ function _nitobe_random_header_js() {
     $names[] = $base_url . '/' . $file;
   }
 
-  $name_js = drupal_to_js($names);
+  $name_js = drupal_json_encode($names);
 
   $js = <<<EOJS
 <script type="text/javascript">

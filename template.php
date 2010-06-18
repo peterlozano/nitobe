@@ -547,6 +547,8 @@ function phptemplate_menu_local_tasks() {
  *
  * @param $theme The actual name of theme that is being being checked.
  */
+ // TODO: Port to D7, I don't know if any of this is still needed.
+ // theme_get_settings is no longer defined
 function nitobe_settings_init($theme) {
   $themes = list_themes();
 
@@ -556,12 +558,14 @@ function nitobe_settings_init($theme) {
 
   // --------------------------------------------------------------------------
   // -- Get the theme settings saved in the database.
-  $settings = theme_get_settings($theme);
+  // $settings = theme_get_settings($theme);
+  // FIXME: rework
+  $settings = array();
 
   // --------------------------------------------------------------------------
   // -- Don't save the toggle_node_info_ variables.
   if (module_exists('node')) {
-    foreach (node_get_types() as $type => $name) {
+    foreach (node_type_get_types() as $type => $name) {
       unset($settings['toggle_node_info_' . $type]);
     }
   }
