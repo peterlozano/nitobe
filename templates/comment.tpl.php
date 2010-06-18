@@ -11,7 +11,7 @@
  */
 ?>
 <div class="<?php print $nitobe_comment_class; ?>">
-  <div class="content clear-block">
+  <div class="content clearfix">
     <?php if (!empty($picture)) { print $picture; } ?>
     <?php if ($comment->new): ?>
       <span class="new"><?php print drupal_ucfirst($new); ?></span>
@@ -20,7 +20,7 @@
     <?php print $content ?>
     <hr/>
     <?php if ($signature): ?>
-      <div class="user-signature clear-block">
+      <div class="user-signature clearfix">
         <?php print $signature ?>
       </div>
     <?php endif; ?>

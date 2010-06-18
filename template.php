@@ -310,7 +310,7 @@ function nitobe_preprocess_node(&$vars) {
   $vars['nitobe_node_class']  = 'node ' . ($node->sticky ? 'sticky ' : '') .
                                 ($node->status ? '' : ' node-unpublished') .
                                 ' node-' . $node->type .
-                                ($teaser ? ' teaser' : '') . ' clear-block';
+                                ($teaser ? ' teaser' : '') . ' clearfix';
   $vars['nitobe_term_links']  = nitobe_separate_terms($vars['terms']);
   $vars['nitobe_node_links']  = nitobe_separate_links($vars['links']);
   $vars['nitobe_perma_title'] = t('Permanent Link to !title',
@@ -548,7 +548,7 @@ function nitobe_preprocess_comment(&$vars) {
 
   $vars['nitobe_comment_class'] = "comment {$vars['status']} {$vars['zebra']}" .
                                   $comment_new . $logged_in . $author .
-                                  ' clear-block';
+                                  ' clearfix';
 }
 
 

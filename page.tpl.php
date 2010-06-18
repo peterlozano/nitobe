@@ -54,7 +54,7 @@
 		<![endif]-->
 	</head>
 	<body class="nitobe <?php print $body_classes; ?>">
-		<div id="page-wrapper" class="clear-block">
+		<div id="page-wrapper" class="clearfix">
 			<div id="header-area" class="container-16">
 					<div id="title-group" class="<?php print nitobe_ns('grid-16', $header, 6, $search_box, 4); ?>">
 			            <?php if (isset($nitobe_logo)) { print $nitobe_logo; } ?>
@@ -93,10 +93,10 @@
 					<?php if ($show_messages && !empty($messages)) { print $messages; } ?>
 					<?php print $help; ?>
 					<?php if (!empty($mission)): ?>
-						<div id="mission" class="clear-block"><?php print $mission; ?></div>
+						<div id="mission" class="clearfix"><?php print $mission; ?></div>
 					<?php endif;?>
 					<?php if (!empty($title)): ?>
-          				<div id="page-headline" class="clear-block">
+          				<div id="page-headline" class="clearfix">
     					    <?php print $nitobe_page_title; ?>
     					    <?php if (isset($nitobe_node_timestamp)): ?>
                   				<span class="timestamp"><?php print $nitobe_node_timestamp; ?></span>
@@ -104,8 +104,8 @@
           				</div><!-- #page-headline -->
 					<?php endif; ?>
 					<?php if (!empty($tabs)):?>
-                    	<div id="tabs-wrapper" class="<?php print $nitobe_content_width; ?> alpha omega clear-block">
-                        	<ul class="tabs primary clear-block<?php if ($tabs2) { print ' has-secondary'; } ?>"><?php print $tabs; ?></ul>
+                    	<div id="tabs-wrapper" class="<?php print $nitobe_content_width; ?> alpha omega clearfix">
+                        	<ul class="tabs primary clearfix<?php if ($tabs2) { print ' has-secondary'; } ?>"><?php print $tabs; ?></ul>
                               <?php if ($tabs2): ?>
                               	  <ul class="tabs secondary"><?php print $tabs2; ?></ul>
                               <?php endif; ?>

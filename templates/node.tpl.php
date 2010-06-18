@@ -25,14 +25,14 @@
 ?>
 <div id="node-<?php print $node->nid; ?>" class="<?php echo $nitobe_node_class; ?>">
 <?php if ($page == 0): ?>
-  <div class="node-headline clear-block">
+  <div class="node-headline clearfix">
     <h2><a href="<?php print $node_url; ?>" rel="bookmark" title="<?php print $nitobe_perma_title; ?>"><?php print $title; ?></a></h2>
     <?php if (isset($nitobe_node_timestamp)): ?>
         <span class="timestamp"><?php print $nitobe_node_timestamp; ?></span>
     <?php endif; ?>
   </div>
 <?php endif; ?>
-  <div class="content clear-block">
+  <div class="content clearfix">
     <?php if (isset($nitobe_node_author)): ?>
     	<div class="node-author"><?php print $nitobe_node_author; ?></div>
     <?php endif; ?>
