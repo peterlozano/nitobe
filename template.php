@@ -556,7 +556,7 @@ function nitobe_preprocess_comment(&$vars) {
  * Returns the rendered local tasks. The default implementation renders
  * them as tabs. Overridden to split the secondary tasks.
  */
-function phptemplate_menu_local_tasks() {
+function nitobe_menu_local_tasks() {
   return menu_primary_local_tasks();
 }
 
@@ -606,7 +606,7 @@ function nitobe_settings_init($theme) {
  *
  * @return the IE style elements.
  */
-function phptemplate_get_ie_styles() {
+function nitobe_get_ie_styles() {
   global $language;
 
   $iecss = '<link type="text/css" rel="stylesheet" media="screen" href="' .

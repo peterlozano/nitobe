@@ -51,7 +51,7 @@
 		<?php print $styles; ?>
 		<?php print $scripts; ?>
 		<!--[if IE]>
-			<?php print phptemplate_get_ie_styles() . "\n"; ?>
+			<?php print nitobe_get_ie_styles() . "\n"; ?>
 		<![endif]-->
 	</head>
 	<body class="nitobe <?php print $body_classes; ?>">

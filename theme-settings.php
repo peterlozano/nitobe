@@ -16,6 +16,7 @@ require_once drupal_get_path('theme', 'nitobe') . '/nitobe_utils.inc';
  *
  * @return array A form array.
  */
+// TODO: Rework this to use the new form alter hook
 function phptemplate_settings($settings) {
   $form = array();
 
