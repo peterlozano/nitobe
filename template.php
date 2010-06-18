@@ -360,11 +360,11 @@ function nitobe_preprocess_maintenance_page(&$vars) {
  *        - 'nitobe_placement' - The theme setting for how the sidebars should
  *          be rendered relative to the content region. Will be one of: 'left',
  *          'center', or 'right'.
- *        - 'nitobe_primary_links' - The HTML for the rendered primary links.
+ *        - 'nitobe_main_menu' - The HTML for the rendered main menu.
  *        - 'nitobe_render_date' - whether or not to render the date for this
  *          type if the page is a node page.
- *        - 'nitobe_secondary_links' - The HTML for the rendered secondary
- *          links.
+ *        - 'nitobe_secondary_menu' - The HTML for the rendered secondary
+ *          menu.
  *        - 'nitobe_slogan' - The HTML for the site slogan.
  *        - 'nitobe_title' - The HTML for the linked title.
  *        - 'tabs2' - The HTML for the menu secondary local tasks.
@@ -430,29 +430,49 @@ function nitobe_preprocess_page(&$vars) {
   }
 
   // --------------------------------------------------------------------------
-  // -- The secondary links
-  if (isset($vars['secondary_links'])) {
+  // -- The secondary menu
+  if (isset($vars['secondary_menu'])) {
     $props = array(
     	'id'    => 'secondary-nav',
-    	'class' => 'links secondary-links grid-16'
+    	'class' => 'links secondary-menu grid-16'
     );
 
-    $vars['nitobe_secondary_links'] = theme('links', $vars['secondary_links'], $props);
+    $vars['nitobe_secondary_menu'] = theme('links__system_secondary_menu', array(
+      'links' => $vars['secondary_menu'],
+      'attributes' => array(
+        'class' => array('links', 'secondary-menu'),
+      ) + $props,
+      'heading' => array(
+        'text' => t('Secondary menu'),
+        'level' => 'h2',
+        'class' => array('element-invisible'),
+      )
+    ));
   }
 
   // --------------------------------------------------------------------------
-  // -- The primary links
-  if (!empty($vars['primary_links'])) {
+  // -- The main menu
+  if (!empty($vars['main_menu'])) {
     $props = array(
       'id'    => 'primary-nav',
       'class' => 'grid-16'
     );
 
-    if (!empty($vars['nitobe_secondary_links'])) {
+    if (!empty($vars['nitobe_secondary_menu'])) {
       $props['class'] = 'grid-16 has-secondary';
     }
 
-    $vars['nitobe_primary_links'] = theme('links', $vars['primary_links'], $props);
+    $vars['nitobe_main_menu'] = theme('links__system_main_menu', array(
+      'links' => $vars['main_menu'],
+      'attributes' => array(
+        'class' => array('links', 'main-menu'),
+      ) + $props,
+      'heading' => array(
+        'text' => t('Main menu'),
+        'level' => 'h2',
+        'class' => array('element-invisible'),
+      )
+    ));      
   }
 
   // --------------------------------------------------------------------------

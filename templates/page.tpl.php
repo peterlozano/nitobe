@@ -29,12 +29,12 @@
  *                    region.
  *           right  - Both sidebars rendered right of the content region.
  *
- * - $nitobe_primary_links - The HTML for the rendered primary links.
+ * - $nitobe_main_menu - The HTML for the rendered primary links.
  *
  * - $nitobe_render_date - whether or not to render the date for this type if
  *   the page is a node page.
  *
- * - $nitobe_secondary_links - The HTML for the rendered secondary links.
+ * - $nitobe_secondary_menu - The HTML for the rendered secondary links.
  *
  * - $nitobe_slogan - The HTML for the site slogan.
  *
@@ -73,12 +73,12 @@
 			        	<div id="search-top" class="grid-4"><?php print $search_box; ?></div>
 			        <?php endif; ?>
           		<hr class="break"/>
-          		<?php if (isset($nitobe_primary_links)): ?>
+          		<?php if (isset($nitobe_main_menu)): ?>
             		<div id="header-links" class="grid-16">
-            		    <?php if (isset($nitobe_primary_links)) { print $nitobe_primary_links; } ?>
-            		    <?php if (isset($nitobe_secondary_links)) : ?>
+            		    <?php if (isset($nitobe_main_menu)) { print $nitobe_main_menu; } ?>
+            		    <?php if (isset($nitobe_secondary_menu)) : ?>
               			<hr class="break"/>
-            		    <?php print $nitobe_secondary_links; ?>
+            		    <?php print $nitobe_secondary_menu; ?>
             		    <?php endif; ?>
           			</div><!-- #header-links -->
           		<?php else: ?>
