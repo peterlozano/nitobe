@@ -55,6 +55,7 @@
 		<![endif]-->
 	</head>
 	<body class="nitobe <?php print $body_classes; ?>">
+		<?php print $page_top; ?>
 		<div id="page-wrapper" class="clearfix">
 			<div id="header-area" class="container-16">
 					<div id="title-group" class="<?php print nitobe_ns('grid-16', $header, 6, $search_box, 4); ?>">
@@ -92,7 +93,7 @@
 				<div id="content" class="<?php print $nitobe_classes['content']; ?>">
 					<?php if (!empty($breadcrumb)) { print $breadcrumb; } ?>
 					<?php if ($show_messages && !empty($messages)) { print $messages; } ?>
-					<?php print $help; ?>
+					<?php print render($page['help']); ?>
 					<?php if (!empty($mission)): ?>
 						<div id="mission" class="clearfix"><?php print $mission; ?></div>
 					<?php endif;?>
@@ -130,27 +131,27 @@
 			<div id="bottom-blocks" class="container-16">
 				<hr class="rule-bottom grid-16"/>
 				<div id="bottom-left" class="grid-4">
-					<?php if (isset($bottom_left)) { print $bottom_left; } ?>
+					<?php if ($page['bottom_left']) { print render($page['bottom_left']); } ?>
 				</div><!-- /bottom-left -->
 				<div id="bottom-center-left" class="grid-4">
-					<?php if (isset($bottom_center_left)) { print $bottom_center_left; } ?>
+					<?php if ($page['bottom_center_left']) { print render($page['bottom_center_left']); } ?>
 				</div><!-- /bottom-center-left -->
 				<div id="bottom-center-right" class="grid-4">
-					<?php if (isset($bottom_center_right)) { print $bottom_center_right; } ?>
+					<?php if ($page['bottom_center_right']) { print render($page['bottom_center_right']); } ?>
 				</div><!-- /bottom-center-right -->
 				<div id="bottom-right" class="grid-4">
-					<?php if (isset($bottom_right)) { print $bottom_right; } ?>
+					<?php if ($page['bottom_right']) { print render($page['bottom_right']); } ?>
 				</div><!-- /bottom-right -->
 			</div><!-- /bottom-blocks -->
 			<hr/>
 			<div id="footer-area" class="container-16">
 				<hr class="rule-top grid-16"/>
 				<div id="footer" class="grid-16">
-					<?php print $footer_message . $footer; ?>
+					<?php print render($page['footer']); ?>
 				</div><!-- /footer -->
 			</div><!-- /footer-area -->
 			<hr/>
 		</div><!-- /page-wrapper -->
-		<?php print $closure; ?>
+		<?php print $page_bottom; ?>
 	</body>
 </html>

@@ -21,6 +21,7 @@ regions[bottom_center_left]  = Bottom Center Left
 regions[bottom_center_right] = Bottom Center Right
 regions[bottom_right]        = Bottom Right
 regions[footer]              = Footer
+regions[help]                = Help
 
   ; --------------------------------------------------------------------------
   ; Theme features.
