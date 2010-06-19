@@ -17,6 +17,6 @@
   <?php if (!empty($block->subject)): ?>
   	<h2><?php print $block->subject ?></h2>
   <?php endif;?>
-  <?php print $block->content ?>
+  <?php print $content ?>
 </div><!-- /<?php print $nitobe_block_id; ?> -->
 <hr/>

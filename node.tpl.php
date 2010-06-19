@@ -36,8 +36,8 @@
     <?php if (isset($nitobe_node_author)): ?>
     	<div class="node-author"><?php print $nitobe_node_author; ?></div>
     <?php endif; ?>
-    <?php print $picture; ?>
-    <?php print $content; ?>
+    <?php print $user_picture; ?>
+    <?php print render($content); ?>
   </div>
   <?php if (!empty($taxonomy) || !empty($links)): ?>
     <div class="meta">

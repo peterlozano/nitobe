@@ -106,14 +106,14 @@
 					<?php endif; ?>
 					<?php if (!empty($tabs)):?>
                     	<div id="tabs-wrapper" class="<?php print $nitobe_content_width; ?> alpha omega clearfix">
-                        	<ul class="tabs primary clearfix<?php if ($tabs2) { print ' has-secondary'; } ?>"><?php print $tabs; ?></ul>
+                        	<ul class="tabs primary clearfix<?php if ($tabs2) { print ' has-secondary'; } ?>"><?php print render($tabs); ?></ul>
                               <?php if ($tabs2): ?>
-                              	  <ul class="tabs secondary"><?php print $tabs2; ?></ul>
+                              	  <ul class="tabs secondary"><?php print render($tabs2); ?></ul>
                               <?php endif; ?>
                     	</div>
                     	<br clear="all"/>
                     <?php endif; ?>
-					<?php print $content; ?>
+					<?php print render($page['content']); ?>
 				</div><!-- /content -->
 				<?php if (!empty($left)): ?>
 					<div id="left-sidebar" class="<?php print $nitobe_classes['left']; ?>">
