@@ -645,6 +645,7 @@ function nitobe_set_layout(&$vars) {
   // -- Add the layout variables.
   $placement = theme_get_setting('nitobe_content_placement');
   $placement = empty($placement) ? 'center' : $placement;
+
   $layout    = $vars['layout'];
   $vars['nitobe_placement'] = $placement;
 
@@ -654,7 +655,7 @@ function nitobe_set_layout(&$vars) {
   $has_right = (($layout == 'right') || ($layout == 'both'));
 
   $vars['nitobe_classes']['content'] = nitobe_ns('grid-16', $has_left, 4, $has_right, 4);
-  $vars['nitobe_classes']['left']    = 'grid-4';
+  $vars['nitobe_classes']['sidebar_first']    = 'grid-4';
   $vars['nitobe_classes']['right']   = 'grid-4';
   $vars['nitobe_content_width']      = $vars['nitobe_classes']['content'];
 
@@ -674,33 +675,33 @@ function nitobe_set_layout(&$vars) {
     'center' => array(
       'left' => array(
         'content' => 'push-4',
-        'left'    => 'pull-12',
+        'sidebar_first'    => 'pull-12',
       ),
       'both' => array(
         'content' => 'push-4',
-        'left'    => 'pull-8',
+        'sidebar_first'    => 'pull-8',
       ),
     ),
     'left' => array(
       'left' => array(
         'content' => 'push-4',
-        'left'    => 'pull-12',
+        'sidebar_first'    => 'pull-12',
       ),
       'right' => array(
         'content' => 'push-4',
-        'right'   => 'pull-12',
+        'sidebar_second'   => 'pull-12',
       ),
       'both' => array(
         'content' => 'push-8',
-        'left'    => 'pull-8',
-        'right'   => 'pull-8',
+        'sidebar_first'    => 'pull-8',
+        'sidebar_second'   => 'pull-8',
       ),
     ),
   );
 
   // --------------------------------------------------------------------------
   // -- Add the push/pull classes.
-  foreach (array('content', 'left', 'right') as $region) {
+  foreach (array('content', 'sidebar_first', 'sidebar_second') as $region) {
     $to_add = isset($push_pull[$placement][$layout][$region]) ?
               ' ' . $push_pull[$placement][$layout][$region] : '';
     $vars['nitobe_classes'][$region] .= $to_add;

@@ -115,15 +115,15 @@
                     <?php endif; ?>
 					<?php print render($page['content']); ?>
 				</div><!-- /content -->
-				<?php if (!empty($left)): ?>
-					<div id="left-sidebar" class="<?php print $nitobe_classes['left']; ?>">
-					  <?php print $left; ?>
-					</div><!-- /left-sidebar -->
+				<?php if ($page['sidebar_first']): ?>
+					<div id="sidebar-first" class="<?php print $nitobe_classes['sidebar_first']; ?>">
+					  <?php print render($page['sidebar_first']); ?>
+					</div><!-- /sidebar-first -->
 				<?php endif; ?>
-				<?php if (!empty($right)): ?>
-					<div id="right-sidebar" class="<?php print $nitobe_classes['right']; ?>">
-						<?php print $right; ?>
-					</div> <!-- /right-sidebar -->
+				<?php if ($page['sidebar_second']): ?>
+					<div id="sidebar-second" class="<?php print $nitobe_classes['sidebar_second']; ?>">
+						<?php print render($page['sidebar_second']); ?>
+					</div> <!-- /sidebar_second -->
 				<?php endif; ?>
 			</div><!-- /content-area -->
 			<hr/>
