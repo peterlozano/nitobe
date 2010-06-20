@@ -650,7 +650,7 @@ function nitobe_set_layout(&$vars) {
 
   $vars['nitobe_classes']['content'] = nitobe_ns('grid-16', $has_left, 4, $has_right, 4);
   $vars['nitobe_classes']['sidebar_first']    = 'grid-4';
-  $vars['nitobe_classes']['right']   = 'grid-4';
+  $vars['nitobe_classes']['sidebar_second']   = 'grid-4';
   $vars['nitobe_content_width']      = $vars['nitobe_classes']['content'];
 
   // --------------------------------------------------------------------------
