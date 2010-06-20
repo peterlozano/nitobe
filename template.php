@@ -645,10 +645,10 @@ function nitobe_set_layout(&$vars) {
 
   // --------------------------------------------------------------------------
   // -- Determine the classes for the content and sidebars.
-  $has_left  = (($layout == 'left')  || ($layout == 'both'));
-  $has_right = (($layout == 'right') || ($layout == 'both'));
+  $has_first  = (($layout == 'first')  || ($layout == 'both'));
+  $has_second = (($layout == 'second') || ($layout == 'both'));
 
-  $vars['nitobe_classes']['content'] = nitobe_ns('grid-16', $has_left, 4, $has_right, 4);
+  $vars['nitobe_classes']['content'] = nitobe_ns('grid-16', $has_first, 4, $has_second, 4);
   $vars['nitobe_classes']['sidebar_first']    = 'grid-4';
   $vars['nitobe_classes']['sidebar_second']   = 'grid-4';
   $vars['nitobe_content_width']      = $vars['nitobe_classes']['content'];
