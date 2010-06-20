@@ -16,13 +16,10 @@ require_once drupal_get_path('theme', 'nitobe') . '/nitobe_utils.inc';
  *
  * @return array A form array.
  */
-// TODO: Rework this to use the new form alter hook
-function phptemplate_settings($settings) {
-  $form = array();
-
+function nitobe_form_system_theme_settings_alter(&$form, &$form_state) {
   // --------------------------------------------------------------------------
   // -- What ordering should be used for the content and sidebars?
-  $default = $settings['nitobe_content_placement'];
+  $default = theme_get_setting('nitobe_content_placement', 'nitobe');
   $default = empty($default) ? 'center' : $default;
   $desc    = t('Where should the sidebars be placed?');
   $options = array(
@@ -50,7 +47,7 @@ function phptemplate_settings($settings) {
 
   // --------------------------------------------------------------------------
   // -- The setting for the header image.
-  $current = $settings['nitobe_header_image'];
+  $current = theme_get_setting('nitobe_header_image', 'nitobe');
   $current = empty($current) ? '' : $current;
   $default = in_array($current, array_keys($options)) ? $current : '<random>';
   $form['nitobe_header_image'] = array(
@@ -62,7 +59,7 @@ function phptemplate_settings($settings) {
 
   // --------------------------------------------------------------------------
   // -- Show the header image if the mastead region has content?
-  $default = $settings['nitobe_header_always_show'];
+  $default = theme_get_setting('nitobe_header_always_show', 'nitobe');
   $default = (!isset($default)) ? FALSE : (boolean)$default;
   $desc    = t("By default, if there is block content in the masthead region, the header image will not be displayed. Check this box to cause the header image to be displayed as the region's background image.");
   $form['nitobe_header_always_show'] = array(
@@ -74,7 +71,7 @@ function phptemplate_settings($settings) {
 
   // --------------------------------------------------------------------------
   // -- Should the alternating color title effect be applied?
-  $default = $settings['nitobe_title_effect'];
+  $default = theme_get_setting('nitobe_title_effect', 'nitobe');
   $default = (!isset($default)) ? FALSE : (boolean)$default;
   $desc    = t('Should the title be adjusted to apply an alternate color to every other word and remove inter-word spacing?');
   $form['nitobe_title_effect'] = array(
@@ -86,7 +83,7 @@ function phptemplate_settings($settings) {
 
   // --------------------------------------------------------------------------
   // -- Strip the ' (not verified)' from output usernames?
-  $default = $settings['nitobe_remove_not_verified'];
+  $default = theme_get_setting('nitobe_remove_not_verified', 'nitobe');
   $default = empty($default) ? FALSE : (boolean)$default;
   $desc    = t("Normally, when an anonymous visitors posts a comment, their name is suffixed with '%verified'. Checking this will prevent that text from being added.",
                array('%verified' => ' (not verified)'));
@@ -99,7 +96,7 @@ function phptemplate_settings($settings) {
 
   // --------------------------------------------------------------------------
   // -- How many page items to put in the pager widgets.
-  $default = $settings['nitobe_pager_page_count'];
+  $default = theme_get_setting('nitobe_pager_page_count', 'nitobe');
   $default = !empty($default) ? intval($default) : 5;
   $options = range(3, 10);
   $desc    = t('The number of default pages to include in pager controls. If you are using a three column layout, a lower number here will work better.');
@@ -111,6 +108,4 @@ function phptemplate_settings($settings) {
     '#default_value'  => $default,
     '#description'    => $desc,
   );
-
-  return $form;
 }
