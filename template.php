@@ -249,7 +249,7 @@ function nitobe_add_masthead_image(&$vars) {
   $header_img = empty($header_img) ? '<random>' : $header_img;
 
   if ($header_img == '<random>') {
-    $vars['closure'] .= _nitobe_random_header_js();
+    $vars['page_bottom'] .= _nitobe_random_header_js();
 
     // ------------------------------------------------------------------------
     // -- Add css for a random image for browsers without js enabled. Patch

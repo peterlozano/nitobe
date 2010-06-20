@@ -9,7 +9,7 @@
 define('NITOBE_CACHE_HDR', 'nitobe.headers.list');
 define('NITOBE_HEADER_PATH', (is_dir(path_to_theme() . '/headers') ? path_to_theme() : drupal_get_path('theme', 'nitobe')) . '/headers');
 define('NITOBE_HEADER_IMG_MASK',
-       '.+\.jpg$|.+\.JPG$|.+\.jpeg*|.+\.JPEG*|.+\.gif$|.+\.GIF$|.+\.png$|.+\.PNG$');
+       '/\.jpg$|\.JPG$|\.jpeg*|\.JPEG*|\.gif$|\.GIF$|\.png$|\.PNG$/');
 
 /**
  * Retrieve a list of the images in the headers directory and provide each
@@ -75,9 +75,9 @@ function _nitobe_random_header_js() {
 
   $js = <<<EOJS
 <script type="text/javascript">
-  $(document).ready(function() {
+  jQuery(document).ready(function() {
     var names = {$name_js};
-    $('#masthead').css('background-image', 'url(' + names[Math.floor(Math.random() * names.length)] + ')');
+    jQuery('#masthead').css('background-image', 'url(' + names[Math.floor(Math.random() * names.length)] + ')');
   });
 </script><noscript></noscript>
 EOJS;
