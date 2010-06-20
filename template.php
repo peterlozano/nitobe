@@ -505,8 +505,7 @@ function nitobe_preprocess_comment(&$vars) {
   $comment = $vars['comment'];
   $node    = $vars['node'];
 
-  $vars['author']  = theme('username', $comment);
-  $vars['content'] = $comment->comment;
+  $vars['author']  = theme('username', array('account' => $comment));
 
   // --------------------------------------------------------------------------
   // -- Adjust the title link to have a title.

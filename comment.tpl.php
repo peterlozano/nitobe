@@ -17,7 +17,7 @@
       <span class="new"><?php print drupal_ucfirst($new); ?></span>
     <?php endif; ?>
     <?php if (!empty($title)) { ?><h3><?php print $title ?></h3><?php } ?>
-    <?php print $content ?>
+    <?php print render($content) ?>
     <hr/>
     <?php if ($signature): ?>
       <div class="user-signature clearfix">
