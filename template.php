@@ -432,16 +432,12 @@ function nitobe_preprocess_page(&$vars) {
   // --------------------------------------------------------------------------
   // -- The secondary menu
   if (isset($vars['secondary_menu'])) {
-    $props = array(
-    	'id'    => 'secondary-nav',
-    	'class' => 'links secondary-menu grid-16'
-    );
-
     $vars['nitobe_secondary_menu'] = theme('links__system_secondary_menu', array(
       'links' => $vars['secondary_menu'],
       'attributes' => array(
-        'class' => array('links', 'secondary-menu'),
-      ) + $props,
+        'id' => 'secondary-nav',
+        'class' => array('links', 'secondary-menu', 'grid-16'),
+      ),
       'heading' => array(
         'text' => t('Secondary menu'),
         'level' => 'h2',
@@ -453,20 +449,18 @@ function nitobe_preprocess_page(&$vars) {
   // --------------------------------------------------------------------------
   // -- The main menu
   if (!empty($vars['main_menu'])) {
-    $props = array(
-      'id'    => 'primary-nav',
-      'class' => 'grid-16'
-    );
+    $classes = array('links', 'main-menu', 'grid-16');
 
     if (!empty($vars['nitobe_secondary_menu'])) {
-      $props['class'] = 'grid-16 has-secondary';
+      $classes[] = 'has-secondary';
     }
 
     $vars['nitobe_main_menu'] = theme('links__system_main_menu', array(
       'links' => $vars['main_menu'],
       'attributes' => array(
-        'class' => array('links', 'main-menu'),
-      ) + $props,
+        'id' => 'primary-nav',
+        'class' => $classes,
+      ),
       'heading' => array(
         'text' => t('Main menu'),
         'level' => 'h2',
