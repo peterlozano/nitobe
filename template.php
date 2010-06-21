@@ -350,6 +350,15 @@ function nitobe_process_html(&$vars) {
   // -- Re-order the CSS files so that the framework styles come first.
   $vars['css_alt'] = nitobe_css_reorder($vars['css']);
   $vars['styles'] = drupal_get_css($vars['css_alt']);
+
+  // --------------------------------------------------------------------------
+  // -- Determine if the masthead image should be displayed.
+  $force_header = theme_get_setting('nitobe_header_always_show');
+  $masthead     = $vars['masthead'];
+
+  if ($force_header || empty($masthead)) {
+    nitobe_add_masthead_image($vars);
+  }
 }
 
 /**
@@ -384,15 +393,6 @@ function nitobe_preprocess_page(&$vars) {
   // --------------------------------------------------------------------------
   // -- Determine which layout to use.
   nitobe_set_layout($vars);
-
-  // --------------------------------------------------------------------------
-  // -- Determine if the masthead image should be displayed.
-  $force_header = theme_get_setting('nitobe_header_always_show');
-  $masthead     = $vars['masthead'];
-
-  if ($force_header || empty($masthead)) {
-    nitobe_add_masthead_image($vars);
-  }
 
   // --------------------------------------------------------------------------
   // -- Handle the title effect

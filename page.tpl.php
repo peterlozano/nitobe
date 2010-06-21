@@ -41,21 +41,7 @@
  *
  * $Id: page.tpl.php,v 1.16.2.1 2009/06/19 02:36:38 shannonlucas Exp $
  */
-?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
-  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php print $language->language ?>" lang="<?php print $language->language ?>" dir="<?php print $language->dir ?>"
-  <?php print $rdf_namespaces ?>>
-	<head profile="<?php print $grddl_profile ?>">
-		<title><?php print $head_title; ?></title>
-		<?php print $head; ?>
-		<?php print $styles; ?>
-		<?php print $scripts; ?>
-		<!--[if IE]>
-			<?php print nitobe_get_ie_styles() . "\n"; ?>
-		<![endif]-->
-	</head>
-	<body class="nitobe <?php print $body_classes; ?>">
-		<?php print $page_top; ?>
+?>
 		<div id="page-wrapper" class="clearfix">
 			<div id="header-area" class="container-16">
 					<div id="title-group" class="<?php print nitobe_ns('grid-16', $header, 6, $search_box, 4); ?>">
@@ -152,6 +138,3 @@
 			</div><!-- /footer-area -->
 			<hr/>
 		</div><!-- /page-wrapper -->
-		<?php print $page_bottom; ?>
-	</body>
-</html>
