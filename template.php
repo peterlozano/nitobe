@@ -310,7 +310,7 @@ function nitobe_preprocess_node(&$vars) {
   $vars['nitobe_node_class']  = 'node ' . ($node->sticky ? 'sticky ' : '') .
                                 ($node->status ? '' : ' node-unpublished') .
                                 ' node-' . $node->type .
-                                ($teaser ? ' teaser' : '') . ' clearfix';
+                                ($vars['teaser'] ? ' teaser' : '') . ' clearfix';
   $vars['nitobe_term_links']  = nitobe_separate_terms($vars['terms']);
   $vars['nitobe_node_links']  = nitobe_separate_links($vars['links']);
   $vars['nitobe_perma_title'] = t('Permanent Link to !title',
