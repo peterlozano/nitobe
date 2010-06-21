@@ -74,30 +74,10 @@ function nitobe_css_reorder($css) {
   // -- all stylesheets.
   if (isset($framework['stylesheets'])) {
     foreach ($framework['stylesheets'] as $media => $styles_from_960) {
-      // Setup framework group.
-      if (isset($css[$media])) {
-        $css[$media] = array_merge(array('framework' => array()), $css[$media]);
-      }
-      else {
-        $css[$media]['framework'] = array();
-      }
       foreach ($styles_from_960 as $style_from_960) {
         // Force framework styles to come first.
         if (strpos($style_from_960, 'framework') !== FALSE) {
-          $framework_shift = $style_from_960;
-          $remove_styles = array($style_from_960);
-          // Handle styles that may be overridden from sub-themes.
-          foreach ($css[$media]['theme'] as $style_from_var => $preprocess) {
-            if ($style_from_960 != $style_from_var && basename($style_from_960) == basename($style_from_var)) {
-              $framework_shift = $style_from_var;
-              $remove_styles[] = $style_from_var;
-              break;
-            }
-          }
-          $css[$media]['framework'][$framework_shift] = TRUE;
-          foreach ($remove_styles as $remove_style) {
-            unset($css[$media]['theme'][$remove_style]);
-          }
+          $css[$style_from_960]['weight'] = -100;
         }
       }
     }

@@ -342,6 +342,15 @@ function nitobe_preprocess_maintenance_page(&$vars) {
   nitobe_preprocess_page($vars);
 }
 
+/**
+ * Process the html.
+ */
+function nitobe_process_html(&$vars) {
+  // --------------------------------------------------------------------------
+  // -- Re-order the CSS files so that the framework styles come first.
+  $vars['css_alt'] = nitobe_css_reorder($vars['css']);
+  $vars['styles'] = drupal_get_css($vars['css_alt']);
+}
 
 /**
  * Override or insert PHPTemplate variables into the templates.
@@ -375,11 +384,6 @@ function nitobe_preprocess_page(&$vars) {
   // --------------------------------------------------------------------------
   // -- Determine which layout to use.
   nitobe_set_layout($vars);
-
-  // --------------------------------------------------------------------------
-  // -- Re-order the CSS files so that the framework styles come first.
-  $vars['css_alt'] = nitobe_css_reorder($vars['css']);
-  $vars['styles'] = drupal_get_css($vars['css_alt']);
 
   // --------------------------------------------------------------------------
   // -- Determine if the masthead image should be displayed.
