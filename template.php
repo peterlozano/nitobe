@@ -318,14 +318,14 @@ function nitobe_preprocess_node(&$vars) {
 
   // --------------------------------------------------------------------------
   // -- Node authorship.
-  if (!empty($vars['submitted'])) {
+  if ($vars['display_submitted']) {
     $vars['nitobe_node_author'] = t('Posted by !author',
                                     array('!author' => $vars['name']));
   }
 
   // --------------------------------------------------------------------------
   // -- Timestamp for this type?
-  if (!empty($vars['submitted']) && isset($node->created)) {
+  if ($vars['display_submitted'] && isset($node->created)) {
     $vars['nitobe_node_timestamp'] = format_date($node->created, 'custom', t('d M Y'));
   }
 }
