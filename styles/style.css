@@ -415,6 +415,8 @@ ul.pager li.pager-current {
   padding: 0;
   text-transform: lowercase;
   width: 66%;
+  border: 0;
+  font-size: 2em;
 }
 
 .node .node-headline {
